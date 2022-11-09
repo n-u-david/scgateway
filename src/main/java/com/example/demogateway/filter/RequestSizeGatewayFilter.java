@@ -16,6 +16,9 @@ public class RequestSizeGatewayFilter implements GlobalFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         LOGGER.info("Going through RequestSizeGateway Filter");
+        //check request size
+
+
         return chain.filter(exchange);
     }
 }

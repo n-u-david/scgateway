@@ -16,6 +16,13 @@ public class RateLimiterFilter implements GlobalFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         LOGGER.info("Going through Request Filter");
+        //check constraint
+
+        //check SLA
+
+        //Check Operation
+
+
         return chain.filter(exchange);
     }
 }

@@ -16,6 +16,8 @@ public class RequestFilter implements GlobalFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         LOGGER.info("Going through RequestFilter Filter");
+
+        //check verbs
         return chain.filter(exchange);
     }
 }

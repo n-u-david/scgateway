@@ -18,6 +18,20 @@ public class ArcataFilter implements GlobalFilter {
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 
         LOGGER.info("Going through Arcata Filter");
+        //Calling Arcata service here
+
+        //get service key
+
+        //retrieve access policy
+
+        //retrieve service endpoint
+
+        //check audience
+
+        //check scope
+
+
+
         return chain.filter(exchange);
     }
 }

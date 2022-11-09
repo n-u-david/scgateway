@@ -16,6 +16,13 @@ public class JFKFilter implements GlobalFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         LOGGER.info("Going through JFK Filter");
+
+        //check if IAT available in cache
+
+        //if EAT, contacting CAM to fetch IAT and saving it in Cache
+
+        //Go through refresh token flow
+
         return chain.filter(exchange);
     }
 }
