@@ -9,7 +9,7 @@ public class TokenCache {
 
     HashMap<String, String> tokenMap;
 
-    public Map getCache(){
+    public HashMap getCache(){
         return this.tokenMap;
     }
 

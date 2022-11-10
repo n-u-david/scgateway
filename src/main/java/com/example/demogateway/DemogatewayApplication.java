@@ -27,8 +27,8 @@ public class DemogatewayApplication {
 	public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
 		//@formatter:off
 		return builder.routes()
-				.route("path_route", r -> r.path("/get")
-						.uri("http://httpbin.org"))
+				.route("path_route", r -> r.path("/api/*")
+						.uri("http://httpbin.org/get"))
 //				.route("host_route", r -> r.host("*.myhost.org")
 //						.uri("http://httpbin.org"))
 //				.route("rewrite_route", r -> r.host("*.rewrite.org")

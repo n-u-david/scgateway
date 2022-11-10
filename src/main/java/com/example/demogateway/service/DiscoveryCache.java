@@ -8,20 +8,26 @@ import java.util.Map;
 public class DiscoveryCache {
 
     HashMap<String,String> discoveryMap;
+    public DiscoveryCache() {
+        if(discoveryMap==null){
+            discoveryMap = new HashMap<>();
+        }
+    }
 
-    public Map getCache(){
+
+    public HashMap<String,String> getCache(){
         return this.discoveryMap;
     }
 
     public String get(String key){
-        if(discoveryMap.containsKey(key)){
-            return discoveryMap.get(key);
+        if(this.discoveryMap.containsKey(key)){
+            return this.discoveryMap.get(key);
         }
         return null;
     }
 
     public void set(String key, String value){
-        discoveryMap.put(key, value);
+        this.discoveryMap.put(key, value);
     }
 
 }
