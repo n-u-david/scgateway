@@ -9,6 +9,12 @@ public class TokenCache {
 
     HashMap<String, String> tokenMap;
 
+    public TokenCache(){
+        if(tokenMap==null){
+            tokenMap = new HashMap<>();
+        }
+    }
+
     public HashMap getCache(){
         return this.tokenMap;
     }
