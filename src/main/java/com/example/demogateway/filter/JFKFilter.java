@@ -53,6 +53,9 @@ public class JFKFilter implements GlobalFilter {
                 LOGGER.info(response.getBody());
             }
 
+            LOGGER.info("No Token passed in header");
+            //Throw exception here
+
             //if EAT, contacting CAM to fetch IAT and saving it in Cache
         }
 
